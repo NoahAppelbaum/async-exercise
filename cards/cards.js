@@ -18,6 +18,8 @@ async function getDeckID() {
 /** drawCard: draws a card from the Deck of Cards API.
  * returns an array with [string imageURL, number cardsRemaining]
  * FIXME: can return object instead // or return response.json
+ * consider 1 handle click function
+ * don't return array
 */
 async function drawCard() {
   const response = await fetch(`${BASE_URL}/${DECK_ID}/draw`);
